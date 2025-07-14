@@ -19,7 +19,7 @@ source venv/bin/activate  # Windows: venv\Scripts\activate
 ```
 pip install -r requirements.txt
 ```
-
+Add your carbon & cohere api keys and supabase database.
 
 ### 3. Run the app
 ```
