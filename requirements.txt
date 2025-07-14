@@ -1,0 +1,6 @@
+streamlit~=1.46.1
+langchain-community~=0.3.27
+langchain~=0.3.26
+supabase~=2.16.0
+requests~=2.32.4
+pandas~=2.3.1
