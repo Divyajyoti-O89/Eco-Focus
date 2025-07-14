@@ -1,5 +1,3 @@
-
-
 import streamlit as st
 from langchain_core.prompts import PromptTemplate
 from langchain_community.llms import Cohere
@@ -7,13 +5,13 @@ from langchain.chains import LLMChain
 
 
 def generate_impact_summary(data: dict) -> str:
-    # Securely access API key from secrets
+    
     cohere_api_key = st.secrets["COHERE_API_KEY"]
 
-    # Initialize the LLM with Cohere
+    # initialized LLM
     llm = Cohere(cohere_api_key=cohere_api_key)
 
-    # Define prompt template with placeholders for user data
+    # prompt to define data needed
     prompt_template = PromptTemplate(
         input_variables=[
             "nickname", "user_type", "region", "energy_emissions", "commute_emissions",
